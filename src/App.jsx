@@ -1,7 +1,19 @@
+import {
+  About, Footer, Header, Skills, Testimonials, Works,
+} from './containers';
+import Navbar from './components/Navbar/Navbar';
+import './app.scss';
+
 function App() {
   return (
-    <div className="App">
-      Hello, React!))
+    <div className="app">
+      <Navbar />
+      <Header />
+      <About />
+      <Works />
+      <Skills />
+      <Testimonials />
+      <Footer />
     </div>
   );
 }
