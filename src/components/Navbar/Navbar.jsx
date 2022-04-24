@@ -1,4 +1,5 @@
 import { images } from '../../constants';
+import MobileMenu from './MobileMenu';
 import './navbar.scss';
 
 const menuItems = ['home', 'about', 'work', 'skills', 'contact'];
@@ -17,6 +18,7 @@ function Navbar() {
           </li>
         ))}
       </ul>
+      <MobileMenu menuItems={menuItems} />
     </nav>
   );
 }

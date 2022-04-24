@@ -10,6 +10,16 @@
   --gray-color: #6b7688;
   --brown-color: #46364a;
   --white-color: #ffffff;
+
+  --visible-mobile: none;
+  --visible-desktop: flex;
+}
+
+@media (max-width: 1024px) {
+  :root {
+    --visible-mobile: flex;
+    --visible-desktop: none;
+  }
 }
 
 * {
