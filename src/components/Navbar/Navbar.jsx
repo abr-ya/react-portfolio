@@ -1,8 +1,6 @@
-import { images } from '../../constants';
+import { images, menuItems } from '../../constants';
 import MobileMenu from './MobileMenu';
 import './navbar.scss';
-
-const menuItems = ['home', 'about', 'work', 'skills', 'contact'];
 
 function Navbar() {
   return (

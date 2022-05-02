@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import { images } from '../../constants';
-import './header.scss';
+import Wrapper from '../../components/Wrapper/Wrapper';
+import './hello.scss';
 
 const scaleVariants = {
   whileInView: {
@@ -15,15 +16,15 @@ const scaleVariants = {
 
 const circles = [images.react, images.redux, images.sass];
 
-function Header() {
+function Hello() {
   return (
-    <div className="app__header app__flex">
+    <div className="app__hello app__flex">
       <motion.div
         whileInView={{ x: [-200, 0], opacity: [0, 1] }}
         transition={{ duration: 0.8 }}
-        className="app__header-info"
+        className="app__hello-info"
       >
-        <div className="app__header-badge">
+        <div className="app__hello-badge">
           <div className="badge-cmp app__flex">
             <span>👋</span>
             <div style={{ marginLeft: 20 }}>
@@ -42,7 +43,7 @@ function Header() {
       <motion.div
         variants={scaleVariants}
         whileInView={scaleVariants.whileInView}
-        className="app__header-circles"
+        className="app__hello-circles"
       >
         {circles.map((circle, index) => (
           // eslint-disable-next-line react/no-array-index-key
@@ -55,4 +56,4 @@ function Header() {
   );
 }
 
-export default Header;
+export default Wrapper(Hello, 'home');

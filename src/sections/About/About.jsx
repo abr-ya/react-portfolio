@@ -2,7 +2,7 @@
 import { motion } from 'framer-motion';
 import './about.scss';
 
-export default function About({ data }) {
+function About({ data }) {
   return (
     <>
       <h2 className="head-text">
@@ -34,3 +34,5 @@ export default function About({ data }) {
     </>
   );
 }
+
+export default About;

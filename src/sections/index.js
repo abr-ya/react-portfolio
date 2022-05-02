@@ -1,6 +1,6 @@
 import About from './About/AboutContainer';
 import Footer from './Footer/Footer';
-import Header from './Header/Header';
+import Hello from './Hello/Hello';
 import Skills from './Skills/Skills';
 import Testimonials from './Testimonials/Testimonials';
 import Works from './Works/Works';
@@ -8,7 +8,7 @@ import Works from './Works/Works';
 export {
   About,
   Footer,
-  Header,
+  Hello,
   Skills,
   Testimonials,
   Works,

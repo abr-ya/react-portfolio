@@ -1,5 +1,5 @@
 import {
-  About, Footer, Header, Skills, Testimonials, Works,
+  About, Footer, Hello, Skills, Testimonials, Works,
 } from './sections';
 import Navbar from './components/Navbar/Navbar';
 import './app.scss';
@@ -8,7 +8,7 @@ function App() {
   return (
     <div className="app">
       <Navbar />
-      <Header />
+      <Hello />
       <About />
       <Works />
       <Skills />

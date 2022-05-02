@@ -2,8 +2,9 @@ import { useState, useEffect } from 'react';
 import { urlForImg, client } from '../../services/sanity';
 import About from './About';
 import Loader from '../../components/Loader/Loader';
+import Wrapper from '../../components/Wrapper/Wrapper';
 
-export default function AboutContainer() {
+function AboutContainer() {
   const [loading, setLoading] = useState(true);
   const [data, setData] = useState([]);
 
@@ -29,3 +30,5 @@ export default function AboutContainer() {
 
   return <About data={data} />;
 }
+
+export default Wrapper(AboutContainer, 'about');

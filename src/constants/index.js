@@ -1,5 +1,6 @@
 import images from './images';
+import menuItems from './menu-items';
 
-// отключаем, т.к. могут быть ещё константы
+// ToDo: а чем не тут плох дефолтный?
 // eslint-disable-next-line import/prefer-default-export
-export { images };
+export { images, menuItems };
