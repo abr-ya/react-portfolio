@@ -1,7 +1,10 @@
 import './footer.scss';
+import Wrapper from '../../components/Wrapper/Wrapper';
 
-export default function Footer() {
+function Footer() {
   return (
-    <div>Footer</div>
+    <div>Footer Section</div>
   );
 }
+
+export default Wrapper(Footer, 'contact');

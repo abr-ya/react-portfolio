@@ -1,7 +1,10 @@
 import './skills.scss';
+import Wrapper from '../../components/Wrapper/Wrapper';
 
-export default function Skills() {
+function Skills() {
   return (
-    <div>Skills</div>
+    <div>Skills Section</div>
   );
 }
+
+export default Wrapper(Skills, 'skills');
