@@ -15,6 +15,8 @@ const scaleVariants = {
 };
 
 const circles = [images.react, images.redux, images.sass];
+const alts = ['react', 'redux', 'sass'];
+const sites = ['https://reactjs.org/', 'https://react-redux.js.org/', 'https://sass-lang.com/'];
 
 function Hello() {
   return (
@@ -41,6 +43,21 @@ function Hello() {
       </motion.div>
 
       <motion.div
+        whileInView={{ opacity: [0, 1] }}
+        transition={{ duration: 0.5, delayChildren: 0.5 }}
+        className="app__header-img"
+      >
+        <img src={images.profile} alt="profile_bg" />
+        <motion.img
+          whileInView={{ scale: [0, 1] }}
+          transition={{ duration: 1, ease: 'easeInOut' }}
+          src={images.circle}
+          alt="profile_circle"
+          className="overlay_circle"
+        />
+      </motion.div>
+
+      <motion.div
         variants={scaleVariants}
         whileInView={scaleVariants.whileInView}
         className="app__hello-circles"
@@ -48,7 +65,9 @@ function Hello() {
         {circles.map((circle, index) => (
           // eslint-disable-next-line react/no-array-index-key
           <div className="circle-cmp app__flex" key={`circle-${index}`}>
-            <img src={circle} alt="profile_bg" />
+            <a href={sites[index]} target="_blank" className="app__flex" rel="noopener noreferrer">
+              <img src={circle} alt={`${alts[index]}_logo`} />
+            </a>
           </div>
         ))}
       </motion.div>
