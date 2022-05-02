@@ -1,6 +1,6 @@
 import {
   About, Footer, Header, Skills, Testimonials, Works,
-} from './containers';
+} from './sections';
 import Navbar from './components/Navbar/Navbar';
 import './app.scss';
 
